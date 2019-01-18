@@ -1,1 +1,32 @@
 // Navigation code here
+
+.top-nav {
+    background-color: @nav-bg;
+    opacity: 0.9;
+    padding: 10px 10px 5px;
+    position: fixed;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    top: 0;
+    .logo {
+        text-align: center;
+        font-size: 3rem;
+    }
+    nav {
+        width: 100%;
+        text-align: center;
+        .box-align( center, center);
+
+        a {
+            text-decoration: none;
+            color: @nav-font; 
+            padding: 10px 15px;
+            font-size: 1.6rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
