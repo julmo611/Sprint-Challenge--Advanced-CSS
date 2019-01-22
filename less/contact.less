@@ -1,0 +1,56 @@
+
+.space-view {
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid @main-border-color;
+    .image-space {
+        width:300px;
+        height: 300px;
+        margin: 50px auto;
+        background-image: url(../img/space-hover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+        .content-space {
+            position: relative;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(0,0,0, 0.9);
+            height: 300px;
+            overflow: hidden;
+            transition: 1s;
+            h3 {
+                margin-top: 100px;;
+                color: white;
+                width: 100%;
+                font-size: 30px;
+            }
+            &:hover {
+                opacity: 1;
+                
+            }
+            
+        }
+        
+    }
+}
+.contact-form {
+    padding-top: 20px;
+    input {
+        .border-radius(10px);
+        border: 1px solid @main-border-color;
+        padding: 10px 20px;
+    }
+    .btn {
+        margin-top: 10px;
+        .btn-sing(80px, 30px, 1.4rem);
+        
+        @media @phone {
+          .btn-sing(100%, 80px, 2rem);
+        }
+
+      }
+}
